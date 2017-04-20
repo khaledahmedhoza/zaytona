@@ -1,0 +1,32 @@
+<table class="table table-hover">
+  <thead>
+      <tr>
+        <th> رقم الاوردر</th>
+        <th>اسم المنتج</th>
+        <th> المقاس</th>
+        <th>اسم الزبون</th>
+        <th>رقم الهاتف </th>
+        <th>العنوان</th>
+        <th>ملاحظات</th>
+        <th>السعر</th>
+      </tr>
+  </thead>
+  <tbody>
+    {{#each order}}
+      <tr>
+        <td>{{order_id}}</td>
+        <td>{{product_name}}</td>
+        <td>{{size}}</td>
+        <td>{{buyer_name}}</td>
+        <td>{{phone}}</td>
+        <td>
+          {{Address}}
+        </td>
+        <td>{{notes}}</td>
+        <td>{{price}}</td>
+
+      </tr>
+
+    {{/each}}
+  </tbody>
+</table>

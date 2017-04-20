@@ -1,0 +1,32 @@
+<table class="table table-hover">
+  <thead>
+      <tr>
+        <th>اسم المنتج</th>
+        <th>السعر</th>
+        <th>السعر بالطرحة</th>
+        <th>السعر بالقميص</th>
+        <th>السعر كامل</th>
+        <th>المقاس</th>
+        <th>الكمية</th>
+        <th>الوصف</th>
+      </tr>
+  </thead>
+  <tbody>
+    {{#each stock}}
+      <tr>
+        <td>{{product_name}}</td>
+        <td>{{price}}</td>
+        <td>{{price_w_tarha}}</td>
+        <td>{{price_w_shirt}}</td>
+        <td>{{full_price}}</td>
+        <td>
+          {{size}}
+        </td>
+        <td>{{quantity}}</td>
+        <td>{{description}}</td>
+
+      </tr>
+
+    {{/each}}
+  </tbody>
+</table>
